@@ -1,1 +1,10 @@
 <h1>Student Form</h1>
+<%= form_tag posts_path do %>
+  <label for="">First Name:</label><br>
+  <%= text_field_tag :'first[name]' %>
+
+  <label for="">Last Name:</label><br>
+  <%= text_field_tag :'last[name]' %>
+
+  <%= submit_tag "submit" %>
+<% end %>
